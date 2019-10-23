@@ -45,6 +45,8 @@ A task has the following data:
 |  tags|  zero or more tags used to identify or group tasks
 |  created_at|  timestamp, when this task was created. Tasks may be created when a tasklist is created (by copying a template of tasks), or later by inserting a new task in an existing tasklist.
 
+* There are comments associated with tasks.  Right now we are supporting only one comment.
+
 ### Tasklist
 
 | Field | Description |
@@ -52,6 +54,8 @@ A task has the following data:
 |title | plain text title of the tasklist |
 |description | rich text description of the tasklist.  May include links to additional information, policy documents, or other resources. |
 |assignee |  a user id (entry in the user table) indicating who is responsible for completing the tasklist |
+
+* there are comments associated with tasklists.  Right now we are only supporting one comment. 
 
 ### TaskComment
 
@@ -108,12 +112,16 @@ These fields are relevant to the application.  Additional fields are used for au
 
 ## Pages
 
+
 ### My Tasks
 
 The My Tasks page will contain a list of task list titles in the left sidebar. Task list titles which contain tasks due today (or soon) should be highlighted.
 
 Clicking on the task list title will display the list of tasks in the main content area.  
 
+### Edit Tasks
+
+(How will this work?)
 
 
-Tasklist tit
+
